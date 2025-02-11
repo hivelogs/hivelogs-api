@@ -54,7 +54,7 @@ jobs:
       - name: 🏗️ Build and push Docker image (Preview/Prod)
         uses: docker/build-push-action@v6.13.0
         with:
-          context: .
+          context: src/Hivelogs.Api
           file: src/Hivelogs.Api/Dockerfile
           push: true
           tags: |
