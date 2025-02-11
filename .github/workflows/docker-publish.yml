@@ -25,13 +25,13 @@ jobs:
           dotnet-version: '9.0'
 
       - name: 🔧 Restore dependencies
-        run: dotnet restore
+        run: dotnet restore Hivelogs.sln
 
       - name: 🔨 Build solution
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build Hivelogs.sln --no-restore --configuration Release
 
       - name: 🧪 Run unit and integration tests
-        run: dotnet test --no-build --configuration Release --verbosity normal
+        run: dotnet test Hivelogs.sln --no-build --configuration Release --verbosity normal
 
   build-and-push:
     name: 🏗️ Build & Push Docker Image
