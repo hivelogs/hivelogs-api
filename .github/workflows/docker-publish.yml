@@ -51,6 +51,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: 📂 Debug - List repository files
+        run: ls -R
+
       - name: 🏗️ Build and push Docker image (Preview/Prod)
         uses: docker/build-push-action@v6.13.0
         with:
