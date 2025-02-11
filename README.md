@@ -19,8 +19,8 @@ Hivelogs is an open-source **centralized logging platform** that allows develope
 ---
 
 ## 📦 **Project Structure**
-
-📂 hivelogs-api 
+```
+📂 hivelogs-api
 ┣ 📂 src 
 ┃ ┣ 📂 Hivelogs.Api # API layer (Controllers, Middlewares, Configuration) 
 ┃ ┣ 📂 Hivelogs.Application # Business logic layer (Services, Use Cases) 
@@ -37,8 +37,9 @@ Hivelogs is an open-source **centralized logging platform** that allows develope
 ┣ 📜 README.md # Main project documentation 
 ┣ 📜 docker-compose.yml # Docker setup for development 
 ┗ 📜 Hivelogs.sln # Visual Studio solution file
+```
 
---
+---
 
 ## 🛠 **Tech Stack**
 
